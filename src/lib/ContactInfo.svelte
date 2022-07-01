@@ -11,6 +11,14 @@ const team = [
 
 <a id="#contactLink">
 <div class="contact">
+  <span class="contactTitle">
+    <i>
+      <span>
+        Meet the Team
+      </span>
+    </i>
+  </span>
+
   {#each team as member}
     <div>
     <img src={member.img} alt='{member.name} photo'><br>
@@ -47,6 +55,14 @@ const team = [
     /* margin-top: 200px; */
   }
 
+  .contactTitle {
+  font-size: 3em;
+  width: 100%;
+  color: white;
+  text-shadow: 2px 2px 4px;
+  text-align: center
+}
+
   img {
     width: 150px;
     border-radius: 75px;
@@ -57,7 +73,6 @@ const team = [
     animation: shake 0.5s;
     animation-iteration-count: infinite;
   }
-
 
 
   @keyframes shake {

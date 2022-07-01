@@ -1,7 +1,5 @@
 <script>
   import NavBar from './lib/Navbar.svelte';
-  // import MainLanding from './lib/MainLanding.svelte';
-  import Intro from './lib/Intro.svelte';
   import CacheCustomization from './lib/CacheCustomization.svelte';
   import CodeExample from './lib/CodeExample.svelte';
   import DevTools from './lib/DevTools.svelte';
@@ -23,16 +21,13 @@
       <NavBar {navItems}/>
     </div>
     <a id="introLink">
-    <div class="intro">
-      <Intro />
-    </div>
-    </a>
     <div class="codeExample">
       <CodeExample />
     </div>
     <div class="CacheCustomization">
       <CacheCustomization />
     </div>
+    </a>
     <a id="devToolLink">
     <div class="devTools">
       <DevTools />
@@ -67,6 +62,13 @@
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
+  body {
+    margin: 0 0 0 0;
+
+  }
+
+  
+
   .websiteContainer {
     margin: -10px;
     /* background-color: black; */
@@ -80,6 +82,7 @@
     flex-direction: column;
   }
 
+  
   
 
 </style>

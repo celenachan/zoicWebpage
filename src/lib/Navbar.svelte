@@ -24,8 +24,9 @@
       </div>
     </nav>
     <div class='imgContainer'>
-      <a href="#introLink" id="scrollButton" on:click|preventDefault={scrollIntoView}>find out more</a>
+      <a href="#introLink" id="scrollButton" on:click|preventDefault={scrollIntoView}> </a>
       <img id='dinoImg' src="../public/images/zoic_new.png" alt='large, plant eating dinosaur in a river'>
+      <div class="sloganContainer">Caching your responses for when you need them most.</div>
     </div>
     <div class='separationDivI'>
     </div>
@@ -34,6 +35,8 @@
 </div>
 
 <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Fira+Sans:wght@200&family=Tinos&display=swap');
 
 .imgContainer #scrollButton {
   position: absolute;
@@ -54,12 +57,16 @@
 }
 
 .separationDivI {
+    position: relative;
+    top: -25px;
     background-color: #2E485D;
-    height: 30px;
+    height: 40px;
     margin: -5px;
 }
 
 .separationDivII {
+    position: relative;
+    top: -25px;
     background-image: linear-gradient(#2E485D, 80%, transparent);
     height: 30px;
     margin: -5px;
@@ -82,12 +89,13 @@
     background-color: rgba(0, 0, 0, 0.8);
     font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     height: 45px;
-    width: 100vw;
+    width: 100%;
     position: fixed;
     z-index: 10;
     opacity: 90%;
     background: linear-gradient(to right, transparent, 75%, rgb(27, 23, 23));
     font-size: medium;
+    padding: 4px;
 
     /* Fade in  */
     -webkit-animation: fadein 2.5s; /* Safari, Chrome and Opera > 12.1 */
@@ -116,6 +124,10 @@
     to   { opacity: 1; }
 }
 
+.navBar {
+  width: 100%;
+
+}
 
   .navbar-list {
     display: none;
@@ -148,7 +160,7 @@
     }
 
   #dinoImg {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 }
 
@@ -170,8 +182,14 @@ a:active {
   text-decoration: underline;
 }
 
-
-
-
+.sloganContainer {
+  position: relative;
+  top: -3.3em;
+  color: white;
+  padding-left: 45px;
+  margin: 0;
+  font-family: 'Tinos', serif;
+  font-size: 1.2rem;
+}
     
   </style>

@@ -5,10 +5,9 @@
 <div class="cacheConfigContainer">
     <div class='cacheConfigTextContainer'>
       <div class="cacheConfigTitle">
-      <i>
-        Configuring your cache
-      </i>
-
+            <i>
+                Configuring your cache
+            </i>
       </div>
         <div>
             <p>
@@ -35,6 +34,8 @@
         font-size: 1.4rem;
     }
 
+
+
     .cacheConfigTextContainer {
         display: flex;
         flex-direction: column;
@@ -48,13 +49,17 @@
     }
 
     #cacheOptionsScreenshot {
-        padding: 15px;
+        /* padding: 15px;
         box-shadow: 5px 10px 18px #888888;
         border-radius: 7%;
-        width: 580px;
-        min-width: 300px;
-        min-height: 160px;
+        width: 580px; */
+        /* min-width: 300px;
+        min-height: 160px; */
         margin: auto;
+        border-radius: 30px;
+        border: 2px solid rgb(53, 47, 47);
+        box-shadow: 10px 5px 5px rgb(127, 124, 124);
+
     }
 
     .cacheConfigImgContainer {
@@ -68,8 +73,14 @@
 
     p {
     color: white;
-    font-size: 2rem;
+    font-size: 1.5rem;
     }
+
+  @media screen and (max-width: 1475px) {
+    .cacheConfigTextContainer {
+    text-align: center;
+  }
+}
 
    
 

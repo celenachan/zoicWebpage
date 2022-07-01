@@ -13,52 +13,53 @@
 <!-- html -->
 <div class='code-example-container'>
 
-<div class='code-block-container' id='code-block-container'>
-  <code class="language-typescript" data-lang="typescript">
-    <span style="display:flex">
-      <span>
-        <span style="color:#ae81ff">import </span>
-        <span style="color:yellow">{@html openBracket}</span>
-        <span style="color:#9cdcfe">Zoic</span>
-        <span style="color:yellow">{@html closeBracket}</span>
-        <span style="color:#ae81ff"> from </span>
-        <span style="color:orange">{@html '../../OSP/zoic.ts'}</span><span style="color:white">;</span>
-      </span>
-    </span>
-    <br> 
-    <span style="display:flex"> 
-      <span>
+  <div class='code-block-container' id='code-block-container'>
+    <code class="language-typescript" data-lang="typescript">
+      <span style="display:flex">
         <span>
-          <span style="color:#9cdcfe">router</span><span style="color:white">.</span><span style="color:yellow">get</span><span style="color:yellow">{@html '('}</span><!--
-          --><span style="color:orange">{@html "'/endpoint'"}</span><!--
-          --><span style="color:white">,</span>
-          <span style="color:#9cdcfe">zoic.use</span><!--
-          --><span style="color:white">,</span>
-          <span style="color:#9cdcfe">controller.dbRead</span><!--
-          --><span style="color:yellow">{@html ')'}</span>
+          <span style="color:#ae81ff">import </span>
+          <span style="color:yellow">{@html openBracket}</span>
+          <span style="color:#9cdcfe">Zoic</span>
+          <span style="color:yellow">{@html closeBracket}</span>
+          <span style="color:#ae81ff"> from </span>
+          <span style="color:orange">{@html '../../OSP/zoic.ts'}</span><span style="color:white">;</span>
         </span>
       </span>
-    </span>
-  </code>
-</div>
-<div class='codeIntroContainer' id='codeIntro'>
-  <div class="codeIntroTitle">
-    <i>
-      Try Zoic Cache!
-    </i>
+      <br> 
+      <span style="display:flex"> 
+        <span>
+          <span>
+            <span style="color:#9cdcfe">router</span><span style="color:white">.</span><span style="color:yellow">get</span><span style="color:yellow">{@html '('}</span><!--
+            --><span style="color:orange">{@html "'/endpoint'"}</span><!--
+            --><span style="color:white">,</span>
+            <span style="color:#9cdcfe">zoic.use</span><!--
+            --><span style="color:white">,</span>
+            <span style="color:#9cdcfe">controller.dbRead</span><!--
+            --><span style="color:yellow">{@html ')'}</span>
+          </span>
+        </span>
+      </span>
+    </code>
   </div>
 
-  <div class='codeIntroBody'><h2>
-    A caching middleware library for Oak
-    <br><br>
-    Using this library is a breeze.  Below we've included some snippets to show just how quickly you can be up and running with your caching layer.
-    <br><br>
-    Don't bog down your application with heavy boilerplate and definitely don't embed your caching logic into the application itself.  Require in Zoic, setup a few
-    options and let Zoic handle all the caching logic for your RESTful API server-side caching needs.<br><br>
-    <button><span class="button_top" href="#">Download it here</span></button>
-    </h2>
+  <div class='codeIntroContainer' id='codeIntro'>
+    <div class="codeIntroTitle">
+      <i>
+        Try Zoic Cache!
+      </i>
+    </div>
+
+    <div class='codeIntroBody'><p>
+      A caching middleware library for Oak
+      <br><br>
+      Using this library is a breeze.  Below we've included some snippets to show just how quickly you can be up and running with your caching layer.
+      <br><br>
+      Don't bog down your application with heavy boilerplate and definitely don't embed your caching logic into the application itself.  Require in Zoic, setup a few
+      options and let Zoic handle all the caching logic for your RESTful API server-side caching needs.<br><br>
+      <button><span class="button_top" href="#">Download it here</span></button>
+    </p>
+    </div>
   </div>
-</div>
 
 </div>
 
@@ -68,24 +69,29 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-right: 100px;
-  /* justify-content: space-between;   */
+  padding: 50px;
+  justify-content: space-evenly;  
   /* flex-direction: column; */
+
 } 
 
 .code-block-container {
-  display: flex;
-  position: relative;
-  flex-direction: row;
+  /* display: flex; */
+  /* position: relative; */
+  flex-direction: column;
   justify-content: space-evenly;
-  align-items: stretch;
+  /* align-items: stretch; */
   margin: auto;
   padding: 25px;
   font-size: 1.4rem;
   /* width: 35vw;
   height: 20vh; */
   background-color:#272822;
+  border-radius: 30px;
   /* min-width: 200px; */
+  width:600px;
+  box-shadow: 10px 5px 5px rgb(127, 124, 124);
+
 }
 
 .codeIntroContainer {
@@ -97,18 +103,20 @@
 
 
 .codeIntroTitle {
-  font-size: 2.3rem;
+  font-size: 3em;
   color: white;
   text-shadow: 2px 2px 4px;
   /* text-align: right; */
 }
 
 .codeIntroBody {
-  font-size: 1rem;
+  font-size: 1.5em;
   color: white;
 }
 
-.codeIntro {
+
+
+/* .codeIntro {
   width: 50vw;
   height: 20vh;
   text-align:right;
@@ -116,10 +124,10 @@
   display:flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* align-items: stretch; */
+  align-items: stretch;
   margin:auto;
   color: white;
-}
+} */
 
 /* button {
   color: blue;
@@ -163,6 +171,12 @@ button:hover .button_top {
 button:active .button_top {
   /* Push the button downwards when pressed */
  transform: translateY(0);
+}
+
+@media screen and (max-width: 1450px) {
+  .codeIntroContainer {
+    text-align: center;
+  }
 }
 
 
