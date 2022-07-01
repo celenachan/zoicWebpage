@@ -27,11 +27,11 @@
       <Intro />
     </div>
     </a>
-    <div class="CacheCustomization">
-      <CacheCustomization />
-    </div>
     <div class="codeExample">
       <CodeExample />
+    </div>
+    <div class="CacheCustomization">
+      <CacheCustomization />
     </div>
     <a id="devToolLink">
     <div class="devTools">
@@ -71,7 +71,15 @@
     margin: -10px;
     /* background-color: black; */
     background-color: black;
-    background-image: linear-gradient(#EE892F,  #E76020, #E0BB76, #6E896A);
+    background-image: linear-gradient(#2E485D, 20%, #EE892F,  #E76020, #E0BB76, #6E896A);
+    margin: 0 0 0 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex-direction: column;
   }
+
+  
 
 </style>

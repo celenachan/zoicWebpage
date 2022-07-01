@@ -1,7 +1,7 @@
 <script>
 
 const team = [
-  { name: "Joe Burrow", img: '../public/images/joe.jpeg', github: 'https://github.com/jmborrow', linkedin:'https://www.linkedin.com/in/joe-borrow/', id: 1},
+  { name: "Joe Borrow", img: '../public/images/joe.jpeg', github: 'https://github.com/jmborrow', linkedin:'https://www.linkedin.com/in/joe-borrow/', id: 1},
   { name: "Celena Chan", img: '../public/images/celena.jpeg', github: 'https://github.com/celenachan', linkedin:'https://www.linkedin.com/in/celenachan/', id: 2},
   { name: "Aaron Dreyfuss", img: '../public/images/aaron.png', github: 'https://github.com/AaronDreyfuss', linkedin:'https://www.linkedin.com/in/aaron-dreyfuss-708b9bb4/', id: 3},
   { name: "Hank Jackson", img: '../public/images/hank.png', github: 'https://github.com/hankthetank27', linkedin:'https://www.linkedin.com/in/hank-jackson-10345317/', id: 4},
@@ -18,8 +18,8 @@ const team = [
         {member.name}
       </b>
       <br>
-      <a href={member.github}><img id="github" src='../public/images/github.png' alt='github'>
-      <a href={member.linkedin}><img id="linkedin" src='../public/images/linkedin.png' alt='linkedin'>
+      <a href={member.github}><img id="github" src='../public/images/github.png' alt='github'><!--
+      --><a href={member.linkedin}><img id="linkedin" src='../public/images/linkedin.png' alt='linkedin'>
       </center>
     </div>
   {/each}
@@ -43,13 +43,14 @@ const team = [
     /* align-items: center; */
     justify-content: space-evenly;
     color: white;
+    flex-wrap: wrap;
     /* margin-top: 200px; */
   }
 
   img {
     width: 150px;
     border-radius: 75px;
-    border: 2px solid rgb(32, 74, 32);
+    border: 2px solid white;
   }
 
   img:hover {
