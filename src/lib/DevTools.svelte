@@ -18,21 +18,25 @@
   </span>
 </div>
   
-
 <style>
 
   div {
     color: white;
     justify-content: space-around;
+    /* background-color: #E0BB76; */
   }
   .devtoolTitle {
     font-size: 100px;
+    text-shadow: 2px 2px 4px #fffbf3
   }
 
   .devtoolBox {
-    margin-top: 50px;
+    /* background-color: #E0BB76; */
+    /* margin-top: 50px;
     margin-left: 30px;
-    margin-right: 30px;
+    margin-right: 30px; */
+    padding: 100px;
+    border-color: #E0BB76;
     display: flex;
   }
 

@@ -37,6 +37,7 @@
     z-index: 10;
     opacity: 90%;
     background: linear-gradient(to right, transparent, 75%, rgb(27, 23, 23));
+    font-size: medium;
   }
 
   .navbar-list {
@@ -72,6 +73,22 @@
   #dinoImg {
     width: 100vw;
     height: 100vh;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
 }
     
   </style>

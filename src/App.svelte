@@ -69,7 +69,9 @@
 
   .websiteContainer {
     margin: -10px;
+    /* background-color: black; */
     background-color: black;
+    background-image: linear-gradient(#EE892F,  #E76020, #E0BB76, #6E896A);
   }
 
 </style>

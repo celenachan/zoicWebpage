@@ -28,19 +28,28 @@ const team = [
 
 
 <style>
+
+  div {
+    /* background-color: #6E896A; */
+    padding: 50px;
+    /* margin-top: 150px;
+    margin-bottom: 150px; */
+    /* border: 150px;
+    border-color: 150px; */
+  }
   
   .contact {
     display: flex;
     /* align-items: center; */
     justify-content: space-evenly;
     color: white;
-    margin-top: 200px;
+    /* margin-top: 200px; */
   }
 
   img {
     width: 150px;
     border-radius: 75px;
-    border: 2px solid lightgreen;
+    border: 2px solid rgb(32, 74, 32);
   }
 
   img:hover {
