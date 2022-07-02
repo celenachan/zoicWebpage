@@ -1,37 +1,43 @@
 <script>
   import NavBar from './lib/Navbar.svelte';
-  import MainLanding from './lib/MainLanding.svelte';
-  import Intro from './lib/Intro.svelte';
   import CacheCustomization from './lib/CacheCustomization.svelte';
   import CodeExample from './lib/CodeExample.svelte';
   import DevTools from './lib/DevTools.svelte';
   import ContactInfo from './lib/ContactInfo.svelte';
+
+  const navItems = [
+  { label: "Intro", href: "#introLink"},
+//   { label: "Cache options", href: "#"},
+//   { label: "Example", href: "#"},
+  { label: "Dev Tool", href: "#devToolLink"},
+  { label: "Contact Info" ,href: "#contactLink"}
+]
 </script>
 
 <main>
 
   <div class="websiteContainer">
     <div class="navBar">
-      <NavBar />
+      <NavBar {navItems}/>
     </div>
-    <div class="mainLanding">
-      <MainLanding />
-    </div>
-    <div class="intro">
-      <Intro />
+    <a id="introLink">
+    <div class="codeExample">
+      <CodeExample />
     </div>
     <div class="CacheCustomization">
       <CacheCustomization />
     </div>
-    <div class="codeExample">
-      <CodeExample />
-    </div>
+    </a>
+    <a id="devToolLink">
     <div class="devTools">
       <DevTools />
     </div>
+    </a> 
+    <a id="contactLink">
     <div class="contactInfo">
       <ContactInfo />
     </div>
+  </a>
   </div>
 
   <!-- <img src={logo} alt="Svelte Logo" />
@@ -56,9 +62,27 @@
       Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
+  body {
+    margin: 0 0 0 0;
+
+  }
+
+  
+
   .websiteContainer {
     margin: -10px;
+    /* background-color: black; */
     background-color: black;
+    background-image: linear-gradient(#2E485D, 20%, #EE892F,  #E76020, #E0BB76, #6E896A);
+    margin: 0 0 0 0;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    display: flex;
+    flex-direction: column;
   }
+
+  
+  
 
 </style>
