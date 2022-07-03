@@ -1,13 +1,7 @@
-
-
-
-<!-- Imports -->
-
-
-<!-- Script -->
+<!-- scripts -->
 <script>
-  let openBracket = '{';
-  let closeBracket = '}';
+    let openBracket = '{';
+    let closeBracket = '}';
 </script>
 
 <!-- html -->
@@ -16,32 +10,67 @@
     <code class="language-typescript" data-lang="typescript">
       <span style="display:flex">
         <span>
-          <span style="color:#c586c0">import </span>
+          <span style="color:#c586c0"><i>import </i></span>
           <span style="color:#ffd700">{@html openBracket}</span>
           <span style="color:#9cdcfe">Zoic</span>
           <span style="color:#ffd700">{@html closeBracket}</span>
-          <span style="color:#c586c0"> from </span>
-          <span style="color:#ce9178">{@html '"https://deno.land/x/zoic/zoic.ts"'}</span><span style="color:white">;</span>
+          <span style="color:#c586c0"><i> from </i></span>
+          <span style="color:#ce9178">{@html "'https://deno.land/x/zoic/zoic.ts'"}</span><span style="color:white">;</span>
         </span>
       </span>
-      <br> 
+      <br>
       <span style="display:flex"> 
         <span>
           <span>
-            <span style="color:#9cdcfe">router</span><span style="color:white">.</span><span style="color:#ffd700">get</span><span style="color:#ffd700">{@html '('}</span><!--
-            --><span style="color:#ce9178">{@html "'/endpoint'"}</span><!--
-            --><span style="color:white">,</span>
-            <span style="color:#9cdcfe">zoic.use</span><!--
-            --><span style="color:white">,</span>
-            <span style="color:#9cdcfe">controller.dbRead</span><!--
-            --><span style="color:#ffd700">{@html ')'}</span>
+            <span style="color:#569cd6">const </span>
+            <span style="color:#4fc1ff">router<span>
+            <span style="color:white">{@html ' =' }</span>
+            <span style="color:#569cd6">new</span>
+            <span style="color:#dcdcaa">Router</span><!--
+            --><span style="color:#ffd700">{@html '()'}</span><!--
+            --><span style="color:#d4d4d4">;</span>
           </span>
         </span>
       </span>
+      <br>
+      <br>
+      <span style="display:flex"> 
+        <span>
+          <span>
+            <span style="color:#569cd6">const</span>
+            <span style="color:#4fc1ff">zoic</span>
+            <span style="color:white">=</span>
+            <span style="color:#569cd6">new</span>
+            <span style="color:#dcdcaa">Zoic</span><!--
+            --><span style="color:#ffd700">{@html '('}</span><!--
+            --><span style="color:#c586c0">{@html '{'}</span>
+            <br>
+            <span style="color:#9cdcfe;text-indent:5em">&emsp; cache:</span>
+            <span style="color:#ce9178">'lru'</span><!--
+            --><span style="color:white">,</span>
+            <br>
+            <span style="color:#9cdcfe">&emsp; capacity:</span>
+            <span style="color:#b5cea8">50</span><!--
+            --><span style="color:white">,</span>
+            <br>
+            <span style="color:#9cdcfe">&emsp expire:</span>
+            <span style="color:#ce9178">'5m'</span>
+            <br>
+            <span style="color:#c586c0">{@html '}'}</span><!--
+            --><span style="color:#ffd700">{@html ')'}</span><!--
+            --><span style="color:white">{@html ';'}</span>
+          </span>
+        </span>
+      </span>
+
+
+
+
+
     </code>
   </div>
 
-  <div class='codeIntroContainer' id='codeIntro'>
+  <!-- <div class='codeIntroContainer' id='codeIntro'>
     <div class="codeIntroTitle">
       <i>
         Try Zoic Cache!
@@ -55,14 +84,15 @@
       <br><br>
       Don't bog down your application with heavy boilerplate and definitely don't embed your caching logic into the application itself.  Require in Zoic, setup a few
       options and let Zoic handle all the caching logic for your RESTful API server-side caching needs.<br><br>
-      <a href="https://deno.land/x/zoic@v1.0.1"><button><span class="button_top" >Download it here</span></button>
+      <button><span class="button_top" href="#">Download it here</span></button>
     </p>
     </div>
-  </div>
+  </div> -->
 
 </div>
 
 <style>
+
 /* 
 :root {
   --code-purple:#c586c0;
@@ -76,14 +106,11 @@
 }
 */
 
-
-
-
 .code-example-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 30px;
+  padding: 50px;
   justify-content: space-evenly;  
   /* flex-direction: column; */
 
@@ -103,14 +130,14 @@
   background-color:#272822;
   border-radius: 30px;
   /* min-width: 200px; */
-  width:25em;
+  width:600px;
   box-shadow: 10px 5px 5px rgb(127, 124, 124);
 
 }
 
 .codeIntroContainer {
   width: 35vw;
-  padding: 2em;
+  padding: 5em;
   text-align: right;
   /* min-width: 200px; */
 }
@@ -187,7 +214,7 @@ button:active .button_top {
  transform: translateY(0);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width:800px) {
   .codeIntroContainer {
     text-align: center;
   }

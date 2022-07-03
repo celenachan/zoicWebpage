@@ -4,7 +4,7 @@
 <div class="devtoolBox">
   <span>
     <div class="devtoolGif">
-      <img src='../public/images/tempGif.gif' alt="Zoic chrome extension demo" />
+      <img src='../public/images/chromeDev.gif' alt="Zoic chrome extension demo" />
     </div>
 
   </span>
@@ -100,7 +100,7 @@ img {
 
     }
 
-  @media screen and (max-width: 1475px) {
+  @media screen and (max-width: 700px) {
     .devtoolText {
     text-align: center;
   }
