@@ -15,11 +15,8 @@
     <p>
       The Zoic Developer Tool is a Chrome Developer Tools extension for monitoring metrics in a ZoicCache instance. With Zoic Developer Tool, you can monitor and inspect memory usage, reads processed, writes proccesed, latency, and more.
       <br><br>
-      <button>
-        <span href="" class="button_top">
-          Download it here!    
-        </span>
-      </button>
+      
+      <a href="https://chrome.google.com/webstore/detail/zoic-dev-tools/cnoohkfilnjedjeamhmpokfgaadgkgcl"><button><span class="button_top" >Download it here</span></button>
     </p>
   </div>
 
