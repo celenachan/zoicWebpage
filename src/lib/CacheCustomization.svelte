@@ -1,5 +1,5 @@
 <script>
-
+    import CodeBlockCustom from "./CodeBlockCustom.svelte";
 </script>
 
 <div class="cacheConfigContainer">
@@ -20,7 +20,7 @@
     </div>
 
     <div class='cacheConfigImgContainer'>
-        <img id='cacheOptionsScreenshot' src='../public/images/cacheOptions.png' alt='sample code of a user initiating a Zoic cache object'>
+        <CodeBlockCustom />
     </div>
 </div>
 
@@ -76,7 +76,7 @@
     font-size: 1.5rem;
     }
 
-  @media screen and (max-width: 1475px) {
+  @media screen and (max-width: 800px) {
     .cacheConfigTextContainer {
     text-align: center;
   }
